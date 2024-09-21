@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Formulario de Prueba</title>
+    <script>
+        function validarFormulario(event) {
+            event.preventDefault(); // Evita el envío del formulario hasta que se validen los campos
+
+            const nombre = document.getElementById('nombre').value.trim();
+            const mes = document.getElementById('mes').value.trim();
+            const aniversario = document.getElementById('aniversario').value.trim();
+            const moto = document.getElementById('moto').value.trim();
+
+            if (nombre.toUpperCase() !== "ALEJANDRA") {
+                alert("Por favor, ingresa un NOMBRE valido.");
+                return;
+            }
+
+            if (mes.toUpperCase() !== "AGOSTO") {
+                alert("Por favor, ingresa el MES valido.");
+                return;
+            }
+
+            if (aniversario !== "2") {
+                alert("Por favor, ingresa el número de aniversarios valido.");
+                return;
+            }
+
+            if (moto.toUpperCase() !== "NKD") {
+                alert("Por favor, ingresa una marca de moto valida.");
+                return;
+            }
+
+            // Si todo es correcto, redirigir a amor.html
+            window.location.href = "amor.html";
+        }
+    </script>
+</head>
+<body class="prueba">
+    <center>
+        <h2><u>𝐋𝐋𝐄𝐍𝐀 𝐄𝐋 𝐅𝐎𝐑𝐌𝐔𝐋𝐀𝐑𝐈𝐎 𝐀 𝐕𝐄𝐑</u></h2>
+        <form onsubmit="validarFormulario(event)">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" autocomplete="off"><br><br>
+
+            <label for="mes">Mes Aniversario:</label>
+            <input type="text" id="mes" name="mes" autocomplete="off"><br><br>
+
+            <label for="aniversario">Número de Aniversarios:</label>
+            <input type="text" id="aniversario" name="aniversario" autocomplete="off"><br><br>
+
+            <label for="moto">Moto de Amorcito (marca):</label>
+            <input type="text" id="moto" name="moto" autocomplete="off"><br><br>
+
+
+            <button type="submit">𝐂𝐎𝐍𝐅𝐈𝐑𝐌𝐀𝐑</button>
+        </form>
+    </center>
+    <center><img src="img/cat.png" alt="cat" class="cat"></center>
+</body>
+</html>
+

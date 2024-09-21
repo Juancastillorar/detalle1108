@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('img/atardecer.jpeg'); /* Cambia a tu imagen de fondo */
+    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    font-size: 20px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.gato {
+    width: 100%; 
+    max-width: 400px; 
+    height: auto;
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #ffff00;
+    font-size: 36px;
+}
+
+button {
+    padding: 15px 30px;
+    background-color: #ff6600;
+    color: #ffff00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    transform-origin: center;
+    font-size: 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Sombreado más notable */
+}
+
+button:hover {
+    transform: scale(1.2);
+    box-shadow: 0 10px 25px rgba(76,175,80,0.4); /* Mayor sombra al hacer hover */
+}
+
+button:active {
+    transform: scale(0.9);
+    box-shadow: 0 4px 10px rgba(76,175,80,0.4); /* Sombra más notable al hacer clic */
+}
+
+.prueba h2 {
+    color: #0066ff;
+}
+
+.cat {
+    width: 100%; 
+    max-width: 200px; 
+    height: auto;
+    margin-top: 40px;
+}
+
+body.prueba {
+    background-image: url('img/fondo.png'); /* Cambia 'nueva-imagen.jpg' por el nombre de la imagen que quieras */
+    background-size: cover; /* Para que la imagen cubra toda la pantalla */
+    background-position: center; /* Para centrar la imagen de fondo */
+    background-attachment: fixed; /* Para hacer que la imagen se quede fija mientras haces scroll */
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"] {
+    width: 300px; /* Tamaño más pequeño y uniforme para todos los cuadros */
+    padding: 8px 12px; /* Ajuste del espacio interno para hacer los cuadros más compactos */
+    margin: 8px 0; /* Espacio entre los cuadros de texto */
+    border: 2px solid #555; /* Un borde más oscuro y grueso para que destaque */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2); /* Sombra sutil alrededor del cuadro de texto */
+    transition: all 0.3s ease; /* Transición suave para los efectos */
+    background-color: #f9f9f9; /* Fondo claro para los cuadros de texto */
+}
+
+/* Efecto cuando se enfoca (cuando el usuario hace clic en el cuadro) */
+input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus {
+    border-color: #007BFF; /* Cambia el color del borde cuando está en foco */
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.8); /* Una sombra azul más llamativa cuando está enfocado */
+    background-color: #fff; /* El fondo cambia a blanco para un efecto más claro */
+}
+
+/* Estilos para el botón */
+button.prueba {
+    padding: 12px 24px;
+    background-color: #007BFF; /* Color azul para el botón */
+    color: white; /* Texto blanco */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2); /* Sombra para el botón */
+    transition: background-color 0.3s ease;
+}
+
+/* Cambia el color del botón cuando el usuario pasa el mouse sobre él */
+button:hover {
+    background-color: #0056b3; /* Azul más oscuro al pasar el mouse */
+}
+
+body.amor {
+    background-image: url('img/tulipanes.png'); /* Cambia 'nueva-imagen.jpg' por el nombre de la imagen que quieras */
+    background-size: cover; /* Para que la imagen cubra toda la pantalla */
+    background-position: center; /* Para centrar la imagen de fondo */
+    background-attachment: fixed; /* Para hacer que la imagen se quede fija mientras haces scroll */
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+}
+
+.amor h2 {
+    color: #0066ff;
+}
+
+.fin {
+    width: 100%; 
+    max-width: 300px; 
+    height: auto;
+    margin-bottom: 10px;
+}
+
+p {
+    margin: 20px; /* Ajusta el valor según lo necesites */
+    line-height: 1.5; /* Mejora la legibilidad */
+}
